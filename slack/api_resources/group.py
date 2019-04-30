@@ -1,2 +1,2 @@
 class Group:
-	pass
+    pass

@@ -1,2 +1,2 @@
 class APIResource:
-	pass
+    pass
