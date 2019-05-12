@@ -5,8 +5,15 @@ class CreateableAPIResource(APIResource):
     @classmethod
     def create(
         cls,
-        api_key=None
+        api_key=None,
+        **params
     ):
-        requestor = api_requestor.APIRequestor(
+        requestor = APIRequestor(
             api_key
         )
+        url = cls.post_url()
+        response = requestor.request("post", url, params)
+        # response, api_key = requestor.request("post", url, params, headers)
+        # return util.convert_to_slack_object(
+        # 	response, api_key
+        # )
