@@ -1,11 +1,10 @@
 class APIResource:
     @classmethod
     def class_url(cls):
-    	if cls == APIResource:
-    		raise NotImplementedError(
+        if cls == APIResource:
+            raise NotImplementedError(
                 "APIResource is an abstract class. You should perform "
                 "actions on its subclasses (e.g. Chat)"
             )
-    		
-    	return '/' + cls.OBJECT_NAME + '.'
-
+            
+        return '/' + cls.OBJECT_NAME + '.'

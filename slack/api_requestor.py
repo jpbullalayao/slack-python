@@ -1,6 +1,7 @@
 import requests
 import slack
 
+
 class APIRequestor(object):
     def __init__(
         self,
