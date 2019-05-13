@@ -6,5 +6,5 @@ class APIResource:
                 "APIResource is an abstract class. You should perform "
                 "actions on its subclasses (e.g. Chat)"
             )
-            
+
         return '/' + cls.OBJECT_NAME + '.'
